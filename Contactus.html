@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<title>Contact us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.header{
+			background-image: url('images/tech2.jpg');
+			background-size: cover;
+			padding: 52px;
+			color: white;
+			margin: 0;
+			text-align: center;
+			font-family: Arial;
+		}
+		.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color:black;
+			overflow: hidden;
+
+		}
+		.menu li{
+			float: left;
+		}
+		.menu li a{
+			display: block;
+			color: white;
+			text-align: center;
+			text-decoration:none;
+			padding: 14px 16px;
+		}
+		.menu li a:hover{
+			background-color:green;
+			} 
+			.active{
+				background-color: yellow;
+			}
+			@media screen and (max-width: 600px){
+				.menu li{
+					float: none;
+				}
+				
+			}
+			#form{
+			
+				margin: auto;
+				height: auto;
+				width: 1000px;
+				
+			
+			}
+			.input{
+              padding: 12px 12px;
+              width: 100%;
+              margin: 8px 0;
+              box-sizing: border-box;
+              outline: none;
+              border-collapse: 1px solid grey;
+
+
+			}
+			.input:focus{
+				background-color:lightblue;
+			}
+			.submitbtn{
+				background-color: green;
+				color:white;
+				padding: 15px 32px;
+				border:none;
+			}
+			.submitbtn:hover{
+				background-color: yellow;
+			</style>
+	
+	
+</head>
+<body>
+	<div class="header">
+		<h1>Technology website</h1>
+	</div>
+	<div class="topnav">
+		<div class="menu">
+			
+
+			<li><a  href="My fourth project.html" >Home</a></li>
+			
+			<li><a  href="Gallery.html">Gallery</a></li>
+	
+			<li><a  class="active"href="">Contact us</a></li>
+		
+	</div>
+</div>
+<div id="form">
+	<h2>Contact</h2>
+	<p>Fill in the blank for getting in touch with us</p>
+	<form>
+		<p><label for="name">Name</label></p>
+		<p><input type="text" class="input" name="name"placeholder="Name"></p>
+		<p><label for="email">E-mail</label></p>
+		<p><input type="mail" class="input" name="email"placeholder="E-mail"></p>
+		<p><label for="subject">Subject</label></p>
+		<p><input type="text" class="input" name="subject"placeholder="Subject"></p>
+		<p><label for="message">Message</label></p>
+		<p><textarea rows="4" cols="50"name="message"placeholder="Mesage...."></textarea></p>
+			<input type="submit" class="submitbtn" value="Send">
+	</form>
+</body>
+</html>

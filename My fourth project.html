@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+	<title>Technology website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.header{
+			background-image: url('images/tech2.jpg');
+			background-size: cover;
+			padding: 52px;
+			color: white;
+			margin: 0;
+			text-align: center;
+			font-family: Arial;
+		}
+		.menu{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			background-color:black;
+			overflow: hidden;
+
+		}
+		.menu li{
+			float: left;
+		}
+		.menu li a{
+			display: block;
+			color: white;
+			text-align: center;
+			text-decoration:none;
+			padding: 14px 16px;
+		}
+		.menu li a:hover{
+			background-color:green;
+			} 
+			.active{
+				background-color: blue;
+			}
+			@media screen and (max-width: 600px){
+				.menu li{
+					float: none;
+				}
+				
+			}
+			
+			.page-container{
+				width: 800px;
+				margin: auto;
+				height: auto;
+			}
+			#laptopnews{
+				float: left;
+				width: 250px;
+				height: auto;
+				margin: 5px;
+				padding: 15px;
+				margin-bottom: 50px;
+			}
+			#laptopimg{
+				width: 100%;
+				height: auto;
+				border-radius: 50%;
+
+			}
+			
+			
+      #tabletnews{
+				float: left;
+				width: 250px;
+				height: auto;
+				margin: 5px;
+				padding: 15px;
+				margin-bottom: 50px;
+				
+
+			}
+			#tabletimg{
+				width: 100%;
+				height: auto;
+				border-radius: 50%;
+				margin-bottom: 40px;
+
+      }
+      #mobilenews{
+				float: left;
+				width: 250px;
+				height: auto;
+				margin: 5px;
+				padding: 15px;
+				margin-bottom: 50px;
+
+			}
+			#mobileimg{
+				width: 100%;
+				height: auto;
+				margin-bottom: 60px;
+		
+
+      }
+      *{
+      	box-sizing:border-box;
+      }
+      .break{
+      	clear:both;
+      }
+      .latestnews{
+      	height: 50px;
+      	animation-name: news;
+      	animation-duration: 5s;
+      	animation-iteration-count: infinite;
+      	overflow: hidden;
+      	margin-bottom: 20px;
+      }
+      .latestnews p{
+      	width: 100%;
+      	height: 100%;
+      	margin: 0;
+      	font-size: 2em;
+      	color:black;
+      	line-height: 50px;
+      	text-align: center;
+      	transform:translateX(-100%);
+      	animation:scroll-right 10s linear infinite;
+      }
+      @keyframes scroll-right{
+      	
+      	0%{
+      		transform: translateX(-100%);
+      	}
+
+      	100%{
+      		transform: translateX(100%);
+      	}
+      }
+      @keyframes news{
+      	0%{background-color: yellow;}
+      	25%{background-color: green;}
+      	50%{background-color: red;}
+      	75%{background-color: blue;}
+      	100%{background-color: pink;}
+      }
+       .break1{
+      	clear:both;
+      }
+      .Realme{
+      	height: 30px;
+      	overflow: hidden;
+      	margin-bottom: 20px;
+      }
+      .Realme h2{
+      	width: 100%;
+      	height: 100%;
+      	margin: 0;
+      	font-size: 1.5em;
+      	color:black;
+      	line-height: 30px;
+      	text-align: center;
+      	background-color:#ed10de;
+      	font-family: justify;
+      }
+      .real{
+      	float: right;
+      	margin-bottom: 20px;
+      }
+      .break2{
+      	clear: both;
+      }
+      table{
+      	border-collapse: collapse;
+      	width: 100%;
+      	margin-bottom: 20px;
+      }
+      table,th,td{
+      	padding: 8px;
+      	text-align: center;
+      	border-bottom: 2px solid black;
+      	border: 2px solid black;
+      }
+      td{
+      	height: 50px;
+      	vertical-align: bottom;
+      	padding: 10px;
+      }
+       th{
+       	background-color: lightgreen;
+       }
+       tr:hover{
+       	background-color: lightgrey;
+       }
+        #hp{
+      	height: 40px;
+      	margin-bottom: 40px;
+      }
+      #hp h2{
+      	width: 100%;
+      	height: 100%;
+      	margin: 0;
+      	font-size: 1.5em;
+      	color:black;
+      	line-height: 20px;
+      	text-align: center;
+      	background-color:#ed10de;
+      	font-family: justify;
+      }
+      .hp1{
+      	float: right;
+      	margin-bottom: 20px;
+      }
+      #asus{
+      	height: 40px;
+      	margin-bottom: 40px;
+      }
+      #asus h2{
+      	width: 100%;
+      	height: 100%;
+      	margin: 0;
+      	font-size: 1.5em;
+      	color:black;
+      	line-height: 20px;
+      	text-align: center;
+      	background-color:#ed10de;
+      	font-family: justify;
+      }
+      .asus1{
+      	float: right;
+      	margin-bottom: 20px;
+      }
+      .break2{
+      	clear: both;
+      }
+      .footer{
+      	text-align: center;
+      	background-color: black;
+      	color: white;
+      	height: 100px;
+      }
+      .footer a{
+      	color:blue;
+      	text-decoration: none;
+
+      }
+      #me{
+      	color:red;
+      }
+			
+	    .col-1{width: :8.33%;}
+		.col-2{width: :16.66%;}
+		.col-3{width: :25%;}
+		.col-4{width: :33.33%;}
+		.col-5{width: :43.66%;}
+		.col-6{width: :50;}
+		.col-7{width: :58.33%;}
+		.col-8{width: :66.66%;}
+		.col-9{width: :75%;}
+		.col-10{width: :83.66%;}
+		.col-11{width: :91.66%;}
+        .col-12{width: :100%;}
+
+
+        @media only screen and (max-width: 600px){
+       	[class*="col-"]
+       	{
+       		width: 100%;
+       	}
+       }
+		
+	</style>
+	
+	
+</head>
+<body>
+	<div class="header">
+		<h1>Technology website</h1>
+	</div>
+	<div class="topnav">
+		<div class="menu">
+			
+
+			<li><a class="active" href="Home" >Home</a></li>
+			
+			<li><a href="Gallery.html">Gallery</a></li>
+			
+			<li><a href="Contactus.html">Contact us</a></li>
+		
+	</div>
+</div>
+<div class="col-6 page-container">
+	<div id="laptopnews">
+		<h2>Laptop News</h2>
+		<p><img id="laptopimg"src="images/hp.jpg"width="300"height="300"></p>
+		<p>A laptop (also laptop computer), often called a notebook, is a small, portable personal computer (PC) with a "clamshell" form factor, typically having a thin LCD or LED computer screen mounted on the inside of the upper lid of the clamshell and an alphanumeric keyboard on the inside of the lower lid.</p>
+	</div>
+	
+	<div id="tabletnews">
+		<h2>Tablet News</h2>
+		<p><img id="tabletimg"src="images/tab.jpg"></p>
+		<p>A tablet computer, commonly shortened to tablet, is a mobile device, typically with a mobile operating system and touchscreen display processing circuitry, and a rechargeable battery in a single, thin and flat package. Tablets, being computers, do what other personal computers do, but lack some input/output (I/O) abilities that others have. </p>
+	</div>
+<div id="mobilenews">
+	<h2>Mobile News</h2>
+
+	<p><img id="mobileimg"src="images/realme.jpg"></p>
+	<p>A mobile phone, cellular phone, cell phone, cellphone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area. </p>
+</div>
+	<div class="break"></div>
+		<div class="latestnews">
+			<p>Latest news</p>
+			</div>
+			<div class="break1"></div>
+		<div class="Realme">
+			<h2>Realme X3</h2>
+			</div>
+			<div class="real">
+				<img src="images/x.jpg" height="150">
+			</div>
+				<div class="break2"><p>
+Ahh! How wonderful it is to gaze at starry skies. Imagine if you could capture the beauty well? With the realme X3 smartphone this is possible, thanks to the Starry Mode. Oh, and when it comes to capturing photos of any kind, you can count on the AI quad camera and the dual in-display selfie camera to weave some magic. If you are into vlogging, then this smartphone is a handy one to shoot your videos with, as it facilitates clear and shake-free videos.</p>
+
+<table>
+	<tr>
+		<th>Specifications</th>
+		<th>Realme X3 Specifications</th>
+
+
+
+	</tr>
+	<tr>
+		<td>Model</td>
+		<td>X3</td>
+	</tr>
+<tr>
+		<td>Color</td>
+		<td>Glacier blue</td>
+	</tr>
+	<tr>
+		<td>Sim type</td>
+		<td>Dual sim</td>
+	</tr>
+	<tr>
+		<td>SAR Value</td>
+		<td>Head:1,188W/kg,Body:0.906W/kg</td>
+	</tr>
+	<tr>
+		<td>Dislay Size</td>
+		<td>16.69 cm(6.57 inch)</td>
+	</tr>
+	<tr>
+		<td>Resolution</td>
+		<td>2400 x 1080 Pixels</td>
+	</tr>
+	<tr>
+		<td>GPU</td>
+		<td>Adreno 640 GPU</td>
+	</tr>
+	<tr>
+		<td>Operating system</td>
+		<td>Android 10</td>
+	</tr>
+	<tr>
+		<td>Processor Type</td>
+		<td>Qualcomm Snapdragon 855+</td>
+	</tr>
+	<tr>
+		<td>Primary Clock Speed </td>
+		<td>2.96 GHz</td>
+	</tr>
+	<tr>
+		<td>ROM</td>
+		<td>128 GB</td>
+	</tr>
+	<tr>
+		<td>RAM</td>
+		<td>8 GB</td>
+	</tr>
+	<tr>
+		<td>Primary Camera</td>
+		<td>64MP+12MP+8MP+2MP</td>
+	</tr>
+	<tr>
+		<td>Secondary Camera</td>
+		<td>16MP+8Mp</td>
+	</tr>
+	<tr>
+		<td>Battery</td>
+		<td>4200mAh</td>
+	</tr>
+	<tr>
+		<td>Network Type</td>
+		<td>4G VOLTE,4G,3G,2G</td>
+	</tr>
+	<tr>
+		<td>GPRS</td>
+		<td>Yes</td>
+	</tr>
+
+
+
+
+</table>
+</div>
+<div id="hp">
+	<h2>HP Pavilion x360 Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/2 GB Graphics) </h2>
+	</div>
+			<div class="hp1">
+				<img src="images/hp1.jpg" height="150">
+			</div>
+				<div class="break2"><p>Carry It Along 2 in 1 Laptop.14 inch Full HD LED Backlit Anti-glare IPS Multi Touch Display.Finger Print Sensor for Faster System Access.Light Laptop without Optical Disk Drive.NVIDIA Geforce for incredible Performance and Unmatched Efficiency</p>
+				</div>
+				<div id="asus">
+	<h2>Asus VivoBook 14 Core i5 10th Gen - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/2 GB Graphics)  </h2>
+	</div>
+			<div class="asus1">
+				<img src="images/asus.jpg" height="150">
+			</div>
+				<div class="break2"><p>Stylish & Portable Thin and Light Laptop14 inch Full HD LED Backlit Anti-glare Display (200 nits Brightness, 16:9 Aspect Ratio, 45% NTSC, 87% Screen-to-body Ratio)Finger Print Sensor for Faster System AccessLight Laptop without Optical Disk Drive.NVIDIA Geforce for Incredible Performance and Unmatched Efficiency</p>
+				</div>
+
+
+			
+
+		
+		
+
+	
+	
+
+
+</div>
+<div>
+	<div class="footer">
+		<p>Designed by:Vamsi Krishna Bodaballa</p>
+		<p>E-mail:<a href="vamsikrishnabodaballa7@gmail.com">vamsikrishnabodaballa7@gmail.com</a></p>
+		
+<p id="me">&copy;VKB</p>
+	</div>
+
+	
+	</body>
+</html>
